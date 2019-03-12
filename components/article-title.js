@@ -9,12 +9,19 @@ class ArticleTitle extends React.Component {
     this._animId = Math.round(3 * Math.random()) + 1;
   }
 
+  componentDidMount() {
+    this.bgImage = d3.select('.parametric-bg-image');
+    this.titles = d3.selectAll('.article-title');
+  }
+
   handleSelectionOn() {
-    d3.select('.parametric-bg-image').attr('src', this.props.image);
+    this.bgImage.attr('src', this.props.image);
+    this.titles.style('animation-play-state', 'paused');
   }
 
   handleSelectionOff() {
-    d3.select('.parametric-bg-image').attr('src', 'static/images/bunny.png');
+    this.bgImage.attr('src', 'static/images/bunny.png');
+    this.titles.style('animation-play-state', 'running');
   }
 
   render() {

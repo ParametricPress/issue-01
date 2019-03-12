@@ -28,11 +28,11 @@ img {
   animation: marquee2 120s linear infinite;
 }
 .article-title.animation-3 {
-  animation: marquee1 120s linear infinite;
+  animation: marquee3 120s linear infinite;
   /* animation-delay: 0.5s; */
 }
 .article-title.animation-4 {
-  animation: marquee2 120s linear infinite;
+  animation: marquee4 120s linear infinite;
   /* animation-delay: 0.5s; */
 }
 
