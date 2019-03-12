@@ -12,34 +12,45 @@ img {
 }
 
 
-.article-title:hover text {
+.article-title text:hover {
   fill: #fff;
+  /* stroke: #000; */
 }
 
 .article-title {
-  transition: all 1s;
   width: 100%;
 }
+.article-title text {
+  transition: transform 1s;
+}
 
-.article-title.animation-1 {
+.article-title.animation-1 text {
   animation: marquee1 120s linear infinite;
 }
-.article-title.animation-2 {
+.article-title.animation-2 text {
+  animation: marquee3 90s linear infinite;
+  /* animation-delay: 0.5s; */
+}
+.article-title.animation-4 text {
   animation: marquee2 120s linear infinite;
 }
-.article-title.animation-3 {
-  animation: marquee3 120s linear infinite;
+.article-title.animation-6 text {
+  animation: marquee1 60s linear infinite;
   /* animation-delay: 0.5s; */
 }
-.article-title.animation-4 {
-  animation: marquee4 120s linear infinite;
+.article-title.animation-3 text {
+  animation: marquee2 60s linear infinite;
+  /* animation-delay: 0.5s; */
+}
+.article-title.animation-5 text {
+  animation: marquee4 90s linear infinite;
   /* animation-delay: 0.5s; */
 }
 
 
-.article-title:hover {
-  transform: translateX(0) !important;
-  animation: none !important;
+.article-title text:hover {
+  /* animation: none !important;
+  transform: translateX(0) !important; */
 }
 
 @keyframes marquee1 {
