@@ -1,0 +1,34 @@
+
+
+[meta /]
+
+[Preload images:`['static/images/article-jpeg.png', 'static/images/article-bacone.png', 'static/images/article-housing.png', 'static/images/article-physics.png', 'static/images/article-ml.png', 'static/images/article-cds.png']` /]
+
+[TopMatter fullWidth:true /]
+
+[div fullWidth:true style:`{marginBottom: '6em'}`]
+  [ArticleTitle url:"https://parametric.press" image:"static/images/article-jpeg.png"]
+    Deconstructing the JPEG
+  [/ArticleTitle]
+  [ArticleTitle url:"https://parametric.press" image:"static/images/article-bacone.png"]
+    Bacone College
+  [/ArticleTitle]
+  [ArticleTitle url:"https://parametric.press" image:"static/images/article-housing.png"]
+    Data Science and Housing Equity
+  [/ArticleTitle]
+  [ArticleTitle url:"https://parametric.press" image:"static/images/article-physics.png"]
+    Particle Physics
+  [/ArticleTitle]
+  [ArticleTitle url:"https://parametric.press" image:"static/images/article-ml.png"]
+    Bias in Machine Learning
+  [/ArticleTitle]
+  [ArticleTitle url:"https://parametric.press" image:"static/images/article-cds.png"]
+    The Life and Death of the Compact Disc
+  [/ArticleTitle]
+[/div]
+
+
+[Edgeware /]
+
+[BackgroundImage /]
+

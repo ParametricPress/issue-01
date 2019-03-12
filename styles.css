@@ -1,0 +1,71 @@
+
+body {
+  background: #4801FF;
+}
+
+img {
+  background: none;
+}
+
+.idyll-root > :first-child {
+  margin-top: none !important;
+}
+
+
+.article-title:hover text {
+  fill: #fff;
+}
+
+.article-title {
+  transition: all 1s;
+  width: 100%;
+}
+
+.article-title.animation-1 {
+  animation: marquee1 120s linear infinite;
+}
+.article-title.animation-2 {
+  animation: marquee2 120s linear infinite;
+}
+.article-title.animation-3 {
+  animation: marquee1 120s linear infinite;
+  /* animation-delay: 0.5s; */
+}
+.article-title.animation-4 {
+  animation: marquee2 120s linear infinite;
+  /* animation-delay: 0.5s; */
+}
+
+
+.article-title:hover {
+  transform: translateX(0) !important;
+  animation: none !important;
+}
+
+@keyframes marquee1 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(50%); }
+  75% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-50%); }
+  75% { transform: translateX(50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes marquee3 {
+  0% { transform: translateX(-25%); }
+  37.5% { transform: translateX(50%); }
+  87.5% { transform: translateX(-50%); }
+  100% { transform: translateX(-25%); }
+}
+
+@keyframes marquee4 {
+  0% { transform: translateX(25%); }
+  37.5% { transform: translateX(-50%); }
+  87.5% { transform: translateX(50%); }
+  100% { transform: translateX(25%); }
+}
