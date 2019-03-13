@@ -12,7 +12,7 @@ img {
 }
 
 
-.article-title text:hover {
+.article-title tspan:hover {
   fill: #fff;
   /* stroke: #000; */
 }
@@ -20,63 +20,58 @@ img {
 .article-title {
   width: 100%;
 }
-.article-title text {
+.article-title .container {
   transition: transform 1s;
 }
 
-.article-title.animation-1 text {
+.article-title.animating.animation-1 .container {
+  animation: marquee1 240s linear infinite;
+}
+.article-title.animating.animation-2 .container {
+  animation: marquee4 180s linear infinite;
+}
+.article-title.animating.animation-4 .container {
+  animation: marquee3 240s linear infinite;
+}
+.article-title.animating.animation-6 .container {
   animation: marquee1 120s linear infinite;
 }
-.article-title.animation-2 text {
-  animation: marquee3 90s linear infinite;
-  /* animation-delay: 0.5s; */
-}
-.article-title.animation-4 text {
+.article-title.animating.animation-3 .container {
   animation: marquee2 120s linear infinite;
 }
-.article-title.animation-6 text {
-  animation: marquee1 60s linear infinite;
-  /* animation-delay: 0.5s; */
-}
-.article-title.animation-3 text {
-  animation: marquee2 60s linear infinite;
-  /* animation-delay: 0.5s; */
-}
-.article-title.animation-5 text {
-  animation: marquee4 90s linear infinite;
-  /* animation-delay: 0.5s; */
+.article-title.animating.animation-5 .container {
+  animation: marquee4 180s linear infinite;
 }
 
-
-.article-title text:hover {
+.article-title tspan:hover {
   /* animation: none !important;
   transform: translateX(0) !important; */
 }
 
 @keyframes marquee1 {
   0% { transform: translateX(0); }
-  25% { transform: translateX(50%); }
-  75% { transform: translateX(-50%); }
+  25% { transform: translateX(100%); }
+  75% { transform: translateX(-100%); }
   100% { transform: translateX(0); }
 }
 
 @keyframes marquee2 {
   0% { transform: translateX(0); }
-  25% { transform: translateX(-50%); }
-  75% { transform: translateX(50%); }
+  25% { transform: translateX(-100%); }
+  75% { transform: translateX(100%); }
   100% { transform: translateX(0); }
 }
 
 @keyframes marquee3 {
-  0% { transform: translateX(-25%); }
-  37.5% { transform: translateX(50%); }
-  87.5% { transform: translateX(-50%); }
-  100% { transform: translateX(-25%); }
+  0% { transform: translateX(-50%); }
+  37.5% { transform: translateX(100%); }
+  87.5% { transform: translateX(-100%); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes marquee4 {
-  0% { transform: translateX(25%); }
-  37.5% { transform: translateX(-50%); }
-  87.5% { transform: translateX(50%); }
-  100% { transform: translateX(25%); }
+  0% { transform: translateX(50%); }
+  37.5% { transform: translateX(-100%); }
+  87.5% { transform: translateX(100%); }
+  100% { transform: translateX(500%); }
 }

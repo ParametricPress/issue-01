@@ -8,7 +8,7 @@ class Edgeware extends React.Component {
     return (
       <div style={{fontSize: 20, fontFamily: 'Graphik Web', color: 'black'}}>
         <div style={{position: 'fixed', top: '1em', textAlign: 'center', width: '100%'}}>
-          @parametric
+          @<a style={{color: 'black'}} href="https://twitter.com/parametricpress">ParametricPress</a>
         </div>
         <div style={{position: 'fixed', bottom: '1em', textAlign: 'center', width: '100%'}}>
           Spring 2019
