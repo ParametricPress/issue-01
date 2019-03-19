@@ -80,6 +80,10 @@ class ArticleTitle extends React.Component {
     const { hasError, idyll, updateProps, ...props } = this.props;
     const { x, y, width, height, showMeta, showHoverL, showHoverM, showHoverR } = this.state;
     const xFactor = this.getXFactor();
+
+    if (showMeta) {
+      console.log('id', this._id, 'x', x, 'width', width);
+    }
     return (
       <div className={`article-title animation-${this._animId} ${showMeta ? 'animating' : ''}`} ref={this.handleRef.bind(this)}>
         {/* <a href="https://parametric.press"> */}

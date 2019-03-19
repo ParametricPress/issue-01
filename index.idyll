@@ -7,23 +7,26 @@
 [TopMatter fullWidth:true /]
 
 [div fullWidth:true style:`{marginBottom: '6em'}`]
-  [ArticleTitle url:"https://parametric.press" image:"static/images/article-jpeg.png" author:"Omar Shehata"]
-    Deconstructing the JPEG
-  [/ArticleTitle]
-  [ArticleTitle url:"https://parametric.press" image:"static/images/article-bacone.png" author:"James McGirk"]
-    Bacone College
-  [/ArticleTitle]
-  [ArticleTitle url:"https://parametric.press" image:"static/images/article-housing.png" author:"Alyson Powell Key"]
-    Data Science and Housing Equity
-  [/ArticleTitle]
-  [ArticleTitle url:"https://parametric.press" image:"static/images/article-physics.png" author:"Riccardo Maria Bianchi"]
-    Particle Physics
-  [/ArticleTitle]
-  [ArticleTitle url:"https://parametric.press" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
+  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
     Bias in Machine Learning
   [/ArticleTitle]
-  [ArticleTitle url:"https://parametric.press" image:"static/images/article-cds.png" author:"Adlan Jackson"]
-    The Life and Death of the Compact Disc
+  [ArticleTitle url:"articles/deconstructing-the-jpeg/" image:"static/images/article-jpeg.png" author:"Omar Shehata"]
+    Deconstructing the JPEG
+  [/ArticleTitle]
+  [ArticleTitle url:"articles/bacone-school/" image:"static/images/article-bacone.png" author:"James McGirk"]
+    Bacone School
+  [/ArticleTitle]
+  [ArticleTitle url:"articles/housing-data-science/" image:"static/images/article-housing.png" author:"Alyson Powell Key"]
+    Housing Equity
+  [/ArticleTitle]
+  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-physics.png" author:"Riccardo Maria Bianchi"]
+    Particle Physics
+  [/ArticleTitle]
+  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-cds.png" author:"Adlan Jackson"]
+    Death of the Compact Disc
+  [/ArticleTitle]
+  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-cds.png" author:"Sam Petulla"]
+    On Dance
   [/ArticleTitle]
 [/div]
 

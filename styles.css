@@ -1,6 +1,8 @@
 
 body {
   background: #4801FF;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -48,30 +50,34 @@ img {
   transform: translateX(0) !important; */
 }
 
+svg a {
+  stroke: inherit;
+}
+
 @keyframes marquee1 {
   0% { transform: translateX(0); }
-  25% { transform: translateX(100%); }
-  75% { transform: translateX(-100%); }
+  25% { transform: translateX(50%); }
+  75% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
 
 @keyframes marquee2 {
   0% { transform: translateX(0); }
-  25% { transform: translateX(-100%); }
-  75% { transform: translateX(100%); }
+  25% { transform: translateX(-50%); }
+  75% { transform: translateX(50%); }
   100% { transform: translateX(0); }
 }
 
 @keyframes marquee3 {
-  0% { transform: translateX(-50%); }
-  37.5% { transform: translateX(100%); }
-  87.5% { transform: translateX(-100%); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translateX(-25%); }
+  37.5% { transform: translateX(50%); }
+  87.5% { transform: translateX(-50%); }
+  100% { transform: translateX(-25%); }
 }
 
 @keyframes marquee4 {
-  0% { transform: translateX(50%); }
-  37.5% { transform: translateX(-100%); }
-  87.5% { transform: translateX(100%); }
-  100% { transform: translateX(500%); }
+  0% { transform: translateX(25%); }
+  37.5% { transform: translateX(-50%); }
+  87.5% { transform: translateX(50%); }
+  100% { transform: translateX(25%); }
 }
