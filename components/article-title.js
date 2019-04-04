@@ -2,6 +2,7 @@
 
 const React = require('react');
 const d3 = require('d3');
+const { isMobile, fontsLoaded, isServer, fontsLoading, loadFonts } = require('./utils');
 
 let id = 0;
 
@@ -11,6 +12,7 @@ class ArticleTitle extends React.Component {
     this._animId = ++id;
     this._id = id;
     this.state = {
+      showText: false,
       showMeta: false,
       showHoverL: false,
       showHoverM: false,
@@ -21,6 +23,13 @@ class ArticleTitle extends React.Component {
   componentDidMount() {
     this.bgImage = d3.select('.parametric-bg-image');
     this.titles = d3.selectAll('.article-title .container');
+    loadFonts(() => {
+      this.handleRef(this.ref);
+      if (isMobile()) {
+        this.setState({ showText: true });
+      }
+    });
+
   }
 
   handleSelectionOn(suffix) {
@@ -44,7 +53,10 @@ class ArticleTitle extends React.Component {
   }
 
   handleRef(ref) {
-    if (!ref || this.state.showMeta) {
+    if (ref) {
+      this.ref = ref;
+    }
+    if (!ref || !fontsLoaded() || this.state.showMeta || isMobile()) {
       return;
     }
     const $svg = d3.select(ref).select('svg')
@@ -61,6 +73,7 @@ class ArticleTitle extends React.Component {
     pt = pt.matrixTransform(svg.getScreenCTM().inverse());
     this.setState({
       showMeta: true,
+      showText: true,
       x: pt2.x,
       y: pt2.y,
       width: pt.x - pt2.x,
@@ -78,24 +91,26 @@ class ArticleTitle extends React.Component {
 
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
-    const { x, y, width, height, showMeta, showHoverL, showHoverM, showHoverR } = this.state;
+    const { x, y, width, height, showMeta, showText, showHoverL, showHoverM, showHoverR } = this.state;
+
     const xFactor = this.getXFactor();
 
-    if (showMeta) {
-      console.log('id', this._id, 'x', x, 'width', width);
+    if (isServer()) {
+      return null;
     }
+
     return (
-      <div className={`article-title animation-${this._animId} ${showMeta ? 'animating' : ''}`} ref={this.handleRef.bind(this)}>
+      <div key={isServer() ? 'server-title' : 'client-title'} className={`article-title animation-${this._animId} ${(showMeta && !isMobile()) ? 'animating' : ''}`} style={{opacity: showText ? 1 : 0}} ref={this.handleRef.bind(this)}>
         {/* <a href="https://parametric.press"> */}
-          <svg style={{width: '100vw', height: 120}} viewBox="0 0 1000 120">
+          <svg style={{width: '100vw', maxHeight: 120}} viewBox="0 0 1000 120">
             <g className="container">
-              <text x="500" y="70" alignmentBaseline="baseline" textAnchor="middle" fontSize="70" fill="none" strokeWidth="1" stroke="#fff" fontFamily="Graphik Web" fontWeight="bold">
+              <text key={isServer() ? 'server-text' : 'client-text'} x={isMobile() ? 0 : 500} y="70" alignmentBaseline="baseline" textAnchor={isMobile() ? "start" : "middle"} fontSize="70" fill="none" strokeWidth={isMobile() ? 2 : 1} stroke="#fff" fontFamily="Graphik Web" fontWeight="bold">
                 {
-                  showMeta ? <a xlinkHref={props.url}><tspan onMouseEnter={this.handleSelectionOn('L')} onMouseLeave={this.handleSelectionOff('L')}>{props.children}</tspan></a> : null
+                  (showMeta) ? <a xlinkHref={props.url}><tspan onMouseEnter={this.handleSelectionOn('L')} onMouseLeave={this.handleSelectionOff('L')}>{props.children}</tspan></a> : null
                 }
                 <a xlinkHref={props.url}><tspan id={`parametric-title-mid-${this._id}`} dx={70} onMouseEnter={this.handleSelectionOn('M')} onMouseLeave={this.handleSelectionOff('M')}>{props.children}</tspan></a>
                 {
-                  showMeta ? <a xlinkHref={props.url}><tspan dx={70} onMouseEnter={this.handleSelectionOn('R')} onMouseLeave={this.handleSelectionOff('R')}>{props.children}</tspan></a> : null
+                  (showMeta) ? <a xlinkHref={props.url}><tspan dx={70} onMouseEnter={this.handleSelectionOn('R')} onMouseLeave={this.handleSelectionOff('R')}>{props.children}</tspan></a> : null
                 }
               </text>
               <g style={{display: showHoverL ? 'block' : 'none'}}>

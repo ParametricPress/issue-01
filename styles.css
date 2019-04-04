@@ -44,6 +44,9 @@ img {
 .article-title.animating.animation-5 .container {
   animation: marquee4 180s linear infinite;
 }
+.article-title.animating.animation-7 .container {
+  animation: marquee2 120s linear infinite;
+}
 
 .article-title tspan:hover {
   /* animation: none !important;
@@ -80,4 +83,23 @@ svg a {
   37.5% { transform: translateX(-50%); }
   87.5% { transform: translateX(50%); }
   100% { transform: translateX(25%); }
+}
+
+.parametric-issue-title,
+.parametric-cover-title {
+  font-size: 70px;
+  line-height: 72px;
+}
+
+
+@media all and (max-width: 800px) {
+  .parametric-issue-title,
+  .parametric-cover-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .parametric-edgeware {
+    display: none;
+  }
 }

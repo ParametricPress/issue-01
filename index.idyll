@@ -7,7 +7,7 @@
 [TopMatter fullWidth:true /]
 
 [div fullWidth:true style:`{marginBottom: '6em'}`]
-  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
+  [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
     Bias in Machine Learning
   [/ArticleTitle]
   [ArticleTitle url:"articles/deconstructing-the-jpeg/" image:"static/images/article-jpeg.png" author:"Omar Shehata"]
@@ -19,15 +19,18 @@
   [ArticleTitle url:"articles/housing-data-science/" image:"static/images/article-housing.png" author:"Alyson Powell Key"]
     Housing Equity
   [/ArticleTitle]
-  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-physics.png" author:"Riccardo Maria Bianchi"]
+  [ArticleTitle url:"articles/particle-physics/" image:"static/images/article-physics.png" author:"Riccardo Maria Bianchi"]
     Particle Physics
   [/ArticleTitle]
-  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-cds.png" author:"Adlan Jackson"]
-    Death of the Compact Disc
+  [ArticleTitle url:"articles/bombing-se-asia/" image:"static/images/article-cds.png" author:"Megan Vo"]
+    Bombs in Southeast Asia
   [/ArticleTitle]
-  [ArticleTitle url:"articles/bias-in-ml/" image:"static/images/article-cds.png" author:"Sam Petulla"]
-    On Dance
-  [/ArticleTitle]
+  // [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-cds.png" author:"Adlan Jackson"]
+  //   Death of the Compact Disc
+  // [/ArticleTitle]
+  // [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-cds.png" author:"Sam Petulla"]
+  //   On Dance
+  // [/ArticleTitle]
 [/div]
 
 
