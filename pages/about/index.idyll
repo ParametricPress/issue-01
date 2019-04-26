@@ -6,13 +6,78 @@
 
 [h1 style:`{fontSize:64}`]About the[br/]Parametric Press[/h1]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a mollis enim, vel fermentum odio. Proin nec purus lectus. Donec faucibus magna dui, vitae scelerisque nulla ullamcorper sed. Maecenas sodales rhoncus sapien sed aliquet. Etiam at pellentesque nisl. Fusce feugiat eget magna vel porta. Mauris in ultricies sem. Sed feugiat nisl a elit feugiat, eu scelerisque ante condimentum. Praesent auctor sollicitudin ante. Proin a enim eros. Duis at rutrum turpis.
+[div className:"parametric-article-dek"]
 
-Cras nec mi tincidunt, finibus ipsum nec, finibus massa. Mauris malesuada arcu vel est laoreet, vel eleifend magna finibus. Praesent facilisis ipsum velit, at efficitur urna faucibus faucibus. Cras in est semper, sollicitudin lorem id, auctor urna. Maecenas pharetra justo sit amet tempor lobortis. Phasellus elementum lectus nec lacus lobortis bibendum. Ut sed justo quis risus varius interdum sed cursus nisi. Phasellus tempus augue ac ipsum pulvinar ornare non eget lorem. Duis ac aliquet tortor. Aliquam massa felis, dictum quis iaculis ut, feugiat id velit. Sed sit amet diam tellus. Aliquam fringilla, augue faucibus ultrices scelerisque, leo nunc auctor dui, elementum euismod magna lectus et urna. Aliquam eros velit, dapibus vehicula ante non, pharetra scelerisque leo. Donec facilisis molestie urna sed venenatis. Duis rhoncus lacus vel facilisis fringilla. Nunc vel turpis pretium, imperdiet turpis id, imperdiet risus.
+The **Parametric Press** is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined.
 
-Pellentesque et est dictum, venenatis nulla eu, iaculis mi. Etiam condimentum, sem sed pharetra ultricies, sapien ipsum viverra turpis, vel mattis sem quam non leo. Praesent sagittis nibh vitae tempor volutpat. Donec luctus, nibh et tristique ultricies, metus quam maximus augue, non lobortis nisl erat a lorem. Ut gravida magna eget libero vehicula vulputate. Maecenas leo ligula, pulvinar vitae porta id, fermentum nec nisi. In ipsum eros, commodo sit amet nunc at, semper accumsan lacus. Mauris ornare ac quam et vehicula.
+[/div]
 
-Donec nec mollis enim. Cras odio ligula, porta a dolor sit amet, bibendum mattis tortor. Vestibulum vitae semper orci, pellentesque egestas velit. Cras quis sem maximus, venenatis justo at, cursus elit. Nulla hendrerit urna at nunc venenatis feugiat. Integer in risus eget nunc consectetur accumsan a at ante. Etiam scelerisque tempus sapien, vitae malesuada erat fringilla id. Phasellus a lectus pulvinar, tempor ligula pretium, euismod elit. Praesent vitae maximus nisi. Phasellus erat velit, sollicitudin a fringilla vel, pretium eu massa. Phasellus volutpat, magna id hendrerit commodo, leo mauris bibendum tortor, sit amet imperdiet erat diam sed nibh. Sed quam ligula, blandit vel luctus quis, fringilla sed odio. In hac habitasse platea dictumst. Pellentesque consectetur quam ut consequat mattis. Sed aliquet, diam non accumsan tincidunt, justo ligula semper urna, non dictum massa diam eu risus. Curabitur tempus quam ligula, sed suscipit justo egestas ut.
+[br/]
+
+While it has never been easier for independent writers to share their ideas online, the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around [empowering individuals](http://www.newmediareader.com/book_samples/nmr-21-nelson.pdf) and [enhancing cognition](http://dougengelbart.org/content/view/138/000/), but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook.
+
+// [div className:"videoContainer"]
+//     [Youtube
+//     id:"5xEzjJQOihw"
+//     audio:true
+//     width:600
+//     height:335
+//     style:`{width: '100%', margin: '0 auto'}`
+//     options:`{ controls: 0, modestbranding: 1, showinfo: 0 }`
+//     /]
+// [/div]
+
+Alan Kay [imagined the Dynabook](https://history-computer.com/ModernComputer/Personal/Dynabook.html) in the hands of children across the world, while Neal Stephenson wrote of [interactive paper that could display videos and interfaces, and books that could teach their readers](https://en.wikipedia.org/wiki/The_Diamond_Age). The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
+
+[h2 style:`{fontSize:48}`]Our Model[/h2]
+
+Earlier this year, we put out a call for proposals for our first issue. [a href:"/"]Issue 01: *Science + Society*[/a] focuses on examining scientific and technological phenomena that stand to shape society at large, now or in the near future. We sought to cover topics that would benefit from using the interactive or otherwise dynamic capabilities of the web.
+
+Publishing interactive content is tricky because it requires combining prose, code, and other media. Due to the nature of our publication, we did not expect authors to submit a fully developed article. Instead, we accepted idea submissions, and worked together with those accepted to develop the issue, by offering collective technical, design, and editorial assistance to those who needed it. Accepted authors were be compensated 
+
+* Suggested headline
+* A three-paragraph-max outline describing your article
+* Why are you qualified to write this? What will you need help with?
+* Any sketches, mockups, or code prototypes that you've made (optional)
+
+Each published article will receive a unique Digital Object Identifier (DOI), and the code will be released under an open source license.
+
+
+[h2 style:`{fontSize:48}`]Team[/h2]
+
+TK picture, bio, role?
+
+Matthew Conlen
+
+Fred Hohman
+
+Sara Stalla
+
+Victoria Uren
+
+Andrew Sass
+
+Friends of Parametric Press:
+
+...
+
+[h2 style:`{fontSize:48}`]Interactive Media[/h2]
+
+### Technology
+
+Parametric Press is built on a dynamic article template using [Idyll](https://idyll-lang.org/).
+
+### Open Source
+
+open source
+
+### Web Archival
+
+archiving articles
+
+[h2 style:`{fontSize:48}`]Contact[/h2]
+
+Want to get in touch? Send us a an email at **cfp@parametric.press**.
 
 [br/]
 
