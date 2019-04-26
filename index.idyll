@@ -1,31 +1,33 @@
 
 
-[meta /]
+[meta title:"Parametric Press | Science + Society" description:"" /]
+
+[SwupInit /]
 
 [Preload images:`['static/images/article-jpeg.png', 'static/images/article-bacone.png', 'static/images/article-housing.png', 'static/images/article-physics.png', 'static/images/article-ml.png', 'static/images/article-cds.png']` /]
 
 [TopMatter fullWidth:true /]
 
 [div fullWidth:true style:`{marginBottom: '6em'}`]
-  [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
-    Bias in Machine Learning
+  [ArticleTitle url:"/articles/bias-in-machine-learning/" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
+    The Myth of the Impartial Machine
   [/ArticleTitle]
-  [ArticleTitle url:"articles/deconstructing-the-jpeg/" image:"static/images/article-jpeg.png" author:"Omar Shehata"]
-    Deconstructing the JPEG
+  [ArticleTitle url:"/articles/particle-physics/" image:"static/images/article-physics.png" author:"Riccardo Maria Bianchi"]
+    Particle Physics: A Brief Primer
   [/ArticleTitle]
-  [ArticleTitle url:"articles/bacone-school/" image:"static/images/article-bacone.png" author:"James McGirk"]
-    Bacone School
+  [ArticleTitle url:"/articles/housing-data-science/" image:"static/images/article-housing.png" author:"Alyson Powell Key"]
+    The Data Science of Housing Equity
   [/ArticleTitle]
-  [ArticleTitle url:"articles/housing-data-science/" image:"static/images/article-housing.png" author:"Alyson Powell Key"]
-    Housing Equity
+  [ArticleTitle url:"/articles/unraveling-the-jpeg/" image:"static/images/article-jpeg.png" author:"Omar Shehata"]
+    Unraveling the JPEG
   [/ArticleTitle]
-  [ArticleTitle url:"articles/particle-physics/" image:"static/images/article-physics.png" author:"Riccardo Maria Bianchi"]
-    Particle Physics
+  [ArticleTitle url:"/articles/anything-that-flies-anything-that-moves/" image:"static/images/article-cds.png" author:"Megan Vo"]
+    Anything That Flies, On Anything That Moves
   [/ArticleTitle]
-  [ArticleTitle url:"articles/bombing-se-asia/" image:"static/images/article-cds.png" author:"Megan Vo"]
-    Bombs in Southeast Asia
+  [ArticleTitle url:"/articles/bacone-school/" image:"static/images/article-bacone.png" author:"James McGirk"]
+    Flatland Follies: Adjunct Simulator
   [/ArticleTitle]
-  // [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-cds.png" author:"Adlan Jackson"]
+  // [ArticleTitle url:"/articles/bias-in-machine-learning/" image:"static/images/article-cds.png" author:"Adlan Jackson"]
   //   Death of the Compact Disc
   // [/ArticleTitle]
   // [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-cds.png" author:"Sam Petulla"]
@@ -38,3 +40,4 @@
 
 [BackgroundImage /]
 
+[Analytics google:"UA-139053456-1" tag:"issue-01-cover" /]

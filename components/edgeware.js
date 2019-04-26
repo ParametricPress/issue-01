@@ -11,7 +11,7 @@ class Edgeware extends React.Component {
           @<a style={{color: 'black'}} href="https://twitter.com/parametricpress">ParametricPress</a>
         </div>
         <div style={{position: 'fixed', bottom: '1em', textAlign: 'center', width: '100%'}}>
-          Spring 2019
+            <a style={{color: 'black'}} href="./about/">About Us</a>
         </div>
 
         <div style={{position: 'fixed', left: '1em', textAlign: 'center', top: 0, bottom: 0}}>

@@ -1,4 +1,7 @@
 
+html {
+  border-bottom: none;
+}
 body {
   background: #4801FF;
   margin: 0;
@@ -89,6 +92,10 @@ svg a {
 .parametric-cover-title {
   font-size: 70px;
   line-height: 72px;
+}
+
+svg text a:hover {
+  text-decoration: none;
 }
 
 
