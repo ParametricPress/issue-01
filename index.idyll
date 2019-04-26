@@ -2,8 +2,6 @@
 
 [meta title:"Parametric Press | Science + Society" description:"" /]
 
-[SwupInit /]
-
 [Preload images:`['static/images/article-jpeg.png', 'static/images/article-bacone.png', 'static/images/article-housing.png', 'static/images/article-physics.png', 'static/images/article-ml.png', 'static/images/article-cds.png']` /]
 
 [TopMatter fullWidth:true /]

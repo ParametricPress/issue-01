@@ -23,6 +23,7 @@ class ArticleTitle extends React.Component {
   componentDidMount() {
     this.bgImage = d3.select('.parametric-bg-image');
     this.titles = d3.selectAll('.article-title .container');
+    this.swup = require('./swup.js');
     loadFonts(() => {
       this.handleRef(this.ref);
       if (isMobile()) {
@@ -89,6 +90,15 @@ class ArticleTitle extends React.Component {
     return 1;
   }
 
+  handleClick(url) {
+    return () => {
+      this.swup.loadPage({
+        url: url,
+        method: 'GET'
+      })
+    }
+  }
+
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
     const { x, y, width, height, showMeta, showText, showHoverL, showHoverM, showHoverR } = this.state;
@@ -106,11 +116,11 @@ class ArticleTitle extends React.Component {
             <g className="container">
               <text key={isServer() ? 'server-text' : 'client-text'} x={isMobile() ? 0 : 500} y="70" alignmentBaseline="baseline" textAnchor={isMobile() ? "start" : "middle"} fontSize="70" fill="none" strokeWidth={isMobile() ? 2 : 1} stroke="#fff" fontFamily="Graphik Web" fontWeight="bold">
                 {
-                  (showMeta) ? <a xlinkHref={props.url}><tspan onMouseEnter={this.handleSelectionOn('L')} onMouseLeave={this.handleSelectionOff('L')}>{props.children}</tspan></a> : null
+                  (showMeta) ? <a onClick={this.handleClick(props.url)} ><tspan onMouseEnter={this.handleSelectionOn('L')} onMouseLeave={this.handleSelectionOff('L')}>{props.children}</tspan></a> : null
                 }
-                <a xlinkHref={props.url}><tspan id={`parametric-title-mid-${this._id}`} dx={70} onMouseEnter={this.handleSelectionOn('M')} onMouseLeave={this.handleSelectionOff('M')}>{props.children}</tspan></a>
+                <a onClick={this.handleClick(props.url)} ><tspan id={`parametric-title-mid-${this._id}`} dx={70} onMouseEnter={this.handleSelectionOn('M')} onMouseLeave={this.handleSelectionOff('M')}>{props.children}</tspan></a>
                 {
-                  (showMeta) ? <a xlinkHref={props.url}><tspan dx={70} onMouseEnter={this.handleSelectionOn('R')} onMouseLeave={this.handleSelectionOff('R')}>{props.children}</tspan></a> : null
+                  (showMeta) ? <a onClick={this.handleClick(props.url)} ><tspan dx={70} onMouseEnter={this.handleSelectionOn('R')} onMouseLeave={this.handleSelectionOff('R')}>{props.children}</tspan></a> : null
                 }
               </text>
               <g style={{display: showHoverL ? 'block' : 'none'}}>

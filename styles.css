@@ -58,6 +58,7 @@ img {
 
 svg a {
   stroke: inherit;
+  cursor: pointer;
 }
 
 @keyframes marquee1 {
