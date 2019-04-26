@@ -1,0 +1,25 @@
+{
+  "name": "about-the-parametric-press",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "layout": "centered",
+    "css": "styles.css",
+    "authorView": false,
+    "theme": "node_modules/parametric-styles/issue-01-theme.css",
+    "components": [
+      "./components",
+      "./node_modules/parametric-components/dist/cjs/issue-01"
+    ]
+  },
+  "dependencies": {
+    "idyll": "^4.0.7",
+    "idyll-d3-component": "^2.0.0",
+    "idyll-document": "^3.0.6",
+    "parametric-components": "^1.0.31",
+    "parametric-styles": "^1.0.19"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
