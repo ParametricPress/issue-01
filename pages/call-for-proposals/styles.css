@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'Bluu';
+  src: url('fonts/bluu/bluunext-bold-webfont.woff2') format('woff2'),
+       url('fonts/bluu/bluunext-bold-webfont.woff') format('woff'),
+       url('fonts/bluu/bluunext-bold.ttf') format('truetype'),
+       url('fonts/bluu/bluunext-bold-webfont.svg#bluu_nextbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Bluu';
+  src: url('fonts/bluu/bluunext-bolditalic-webfont.woff2') format('woff2'),
+       url('fonts/bluu/bluunext-bolditalic-webfont.woff') format('woff'),
+       url('fonts/bluu/bluunext-bolditalic.ttf') format('truetype'),
+       url('fonts/bluu/bluunext-bolditalic-webfont.svg#bluu_nextbold_italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Reforma';
+  src: url('fonts/reforma/Reforma1918-Gris.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reforma';
+  src: url('fonts/reforma/Reforma1918-GrisItalica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family:"Anderson";
+  src:url("fonts/anderson/AndersonGrotesk-Black.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  /* Before the wildfire: */
+  font-family: Reforma;
+  font-size: 20px;
+  color: #222222;
+  line-height: 40px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.videoContainer {
+  display: block;
+  margin: 1em auto;
+  height: 335px;
+  width: 100%;
+}
+.videoContainer span, iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.article-header {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hed {
+  /* Parametric: */
+  font-family: bluu;
+  font-size: 124px;
+  width: 900px;
+  line-height: 111px;
+}
+
+.hed .press {
+  /* Press: */
+  font-family: bluu;
+  font-style: italic;
+}
+
+.dek {
+  /* Call for Proposals: */
+  font-family: Anderson;
+  font-size: 20px;
+}
+
+.dek .date {
+  /* Fall/Winter 2018: */
+  font-family: bluu;
+  font-style: italic;
+  font-size: 22px;
+}
+
+h2, h3 {
+  font-size: 20px;
+  font-family: Anderson;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+h1.hed, h2.dek {
+  margin: 0;
+}
+
+h2.dek {
+  margin-top: 48px;
+}
+
+h2 {
+  margin: 50px 0 16px;
+}
+
+/*
+input[type="range"]{
+  -webkit-appearance:none;
+  width:160px;
+  height:20px;
+  margin:10px 50px;
+  background: linear-gradient(to right, #000 0%, #000 100%);
+  background-size:150px 5px;
+  background-position:center;
+  background-repeat:no-repeat;
+  overflow:hidden;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:7px;
+  height:20px;
+  background:#000;
+  position:relative;
+  z-index:3;
+  box-shadow:0 0 5px 0 rgba(0,0,0,0.3);
+}
+
+input[type="range"]::-webkit-slider-thumb:after{
+  content:" ";
+  width:100px;
+  height:5px;
+  position:absolute;
+  z-index:1;
+  right:20px;
+  top:5px;
+  background: #000;
+  background: linear-gradient(to right, #000 1%, #000 70%);
+} */
+
+.idyll-text-container {
+  max-width: 896px;
+}
+
+.sliderContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  top: 20px;
+  /* border: solid 1px black; */
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: black;
+  font-family: Graphik;
+  /* opacity: 0.15; */
+  /* transition: opacity 0.5s; */
+}
+
+.sliderContainer img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 155px;
+  background: none;
+}
+
+
+.sliderContainer .button {
+  width: 125px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* background: #222222; */
+  border-bottom: solid 2px #222222;
+  /* color: #ffffff; */
+  margin: 0 auto;
+}
+
+.sliderContainer input {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/* .sliderContainer:hover {
+  opacity: 1;
+} */
+.sliderContainer p {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.stackedList {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.stackedList ul {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.controls {
+  cursor: pointer;
+}
+
+
+ul {
+  padding-left: 0;
+}
+li{
+  list-style: none;
+  padding-left: 1em;
+}
+li:before{
+  content: '';
+  display: inline-block;
+  height: 11px;
+  width: 40px;
+  background-image: url('images/arrow2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+  text-decoration: underline;
+  color: #222222;
+}
+
+button.reset {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+@media all and (max-width: 1000px) {
+
+
+  body {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .idyll-root {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hed {
+    font-size: 48px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  .dek {
+    /* Call for Proposals: */
+    font-family: Graphik-Bold;
+    font-size: 20px;
+  }
+
+  .stackedList {
+    display: flex;
+    flex-direction: column;
+  }
+  .stackedList ul {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+
+  .sliderContainer {
+    display: none;
+  }
+}

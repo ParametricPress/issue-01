@@ -1,0 +1,23 @@
+{
+  "name": "issue-one-cfp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "theme": "github",
+    "layout": "blog",
+    "css": "styles.css",
+    "authorView": false,
+    "template": "_index.html"
+  },
+  "dependencies": {
+    "d3": "^4.0.0",
+    "d3-scale": "^2.1.2",
+    "d3-selection": "^1.3.2",
+    "idyll": "^3.12.0",
+    "idyll-d3-component": "^2.0.0",
+    "idyll-plugin-url-state": "^2.0.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}

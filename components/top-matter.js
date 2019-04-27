@@ -6,7 +6,7 @@ class TopMatter extends React.Component {
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
     return (
-      <div style={{display: 'flex', width: '90vw', margin: '3em auto', flexDirection: 'row'}}>
+      <div className="parametric-cover-top-matter">
         <div style={{flex: 1}}>
           <Logo />
         </div>

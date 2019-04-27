@@ -9,7 +9,7 @@ class Logo extends React.Component {
           <span style={{characterSpacing: '2.4px'}}>Parametric</span><br/>
           Press
         </div>
-        <div style={{fontFamily: 'Graphik Web', fontSize: 20, marginTop: '1em'}}>
+        <div className="parametric-issue-date" style={{fontFamily: 'Graphik Web'}}>
           Spring 2019
         </div>
       </div>
