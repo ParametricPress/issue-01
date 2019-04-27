@@ -6,10 +6,67 @@ body {
   background: #4801FF;
   margin: 0;
   padding: 0;
+  transition: 1s ease-in;
+  transition-delay: 0.5s;
 }
+
+.transition-article-title {
+  transition: transform 3s;
+  transform: none;
+}
+.transition-in {
+  transition: 0.25s;
+}
+.transition-clicked {
+  transition: 2s ease-in;
+  transition-delay: 0.5s;
+}
+/* html.is-animating body {
+  background: #fff;
+} */
+
+html.is-leaving .transition-article-title {
+  transform: translateX(-10000px);
+}
+html.is-leaving .transition-clicked .transition-article-title {
+  transform: none;
+}
+
+html.is-leaving .transition-clicked {
+  transform: scale(200);
+  /* position: absolute; */
+  /* transition-delay: 3s; */
+}
+
+.transition-fade-in {
+  opacity: 1;
+  transition: 5s;
+}
+html.is-rendering .transition-fade-in {
+  opacity: 0;
+}
+
+html.is-leaving img {
+  opacity: 0;
+}
+html.is-leaving body {
+  background: #fff;
+}
+
+.parametric-cover-top-matter {
+  transition: opacity 0.5s;
+  /* transition-delay: opacity 0.5s; */
+}
+html.is-leaving .parametric-cover-top-matter,
+html.is-leaving .parametric-edgeware  {
+ opacity: 0;
+}
+
+
 
 img {
   background: none;
+  transition: opacity 0.25s;
 }
 
 .idyll-root > :first-child {
@@ -43,10 +100,8 @@ img {
   text-align: right;
 }
 
-
 .article-title tspan:hover {
   fill: #fff;
-  /* stroke: #000; */
 }
 
 .article-title {
@@ -55,6 +110,8 @@ img {
 .article-title .container {
   transition: transform 1s;
 }
+
+
 
 .article-title.animating.animation-1 .container {
   animation: marquee1 240s linear infinite;

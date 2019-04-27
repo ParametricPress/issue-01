@@ -16,52 +16,28 @@ The **Parametric Press** is an experimental new project, a born-digital magazine
 
 While it has never been easier for independent writers to share their ideas online, the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around [empowering individuals](http://www.newmediareader.com/book_samples/nmr-21-nelson.pdf) and [enhancing cognition](http://dougengelbart.org/content/view/138/000/), but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook.
 
-// [div className:"videoContainer"]
-//     [Youtube
-//     id:"5xEzjJQOihw"
-//     audio:true
-//     width:600
-//     height:335
-//     style:`{width: '100%', margin: '0 auto'}`
-//     options:`{ controls: 0, modestbranding: 1, showinfo: 0 }`
-//     /]
-// [/div]
-
 Alan Kay [imagined the Dynabook](https://history-computer.com/ModernComputer/Personal/Dynabook.html) in the hands of children across the world, while Neal Stephenson wrote of [interactive paper that could display videos and interfaces, and books that could teach their readers](https://en.wikipedia.org/wiki/The_Diamond_Age). The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
 
 [h2 style:`{fontSize:48}`]Our Model[/h2]
 
-Earlier this year, we put out a call for proposals for our first issue. [a href:"/"]Issue 01: *Science + Society*[/a] focuses on examining scientific and technological phenomena that stand to shape society at large, now or in the near future. We sought to cover topics that would benefit from using the interactive or otherwise dynamic capabilities of the web.
+Earlier this year, we put out a [call for proposals](/issue-01/call-for-proposals) for our first issue. [a href:"/"]Issue 01: *Science + Society*[/a] focuses on examining scientific and technological phenomena that stand to shape society at large, now or in the near future. We sought to cover topics that would benefit from using the interactive or otherwise dynamic capabilities of the web.
 
-Publishing interactive content is tricky because it requires combining prose, code, and other media. Due to the nature of our publication, we did not expect authors to submit a fully developed article. Instead, we accepted idea submissions, and worked together with those accepted to develop the issue, by offering collective technical, design, and editorial assistance to those who needed it. Accepted authors were be compensated 
-
-* Suggested headline
-* A three-paragraph-max outline describing your article
-* Why are you qualified to write this? What will you need help with?
-* Any sketches, mockups, or code prototypes that you've made (optional)
-
-Each published article will receive a unique Digital Object Identifier (DOI), and the code will be released under an open source license.
+Publishing interactive content is tricky because it requires combining prose, code, and other media. Given this, we did not expect authors to submit a fully developed article. Instead, we accepted idea submissions, and worked together with those accepted to develop the issue, by offering collective technical, design, and editorial assistance to those who needed it.
 
 
 [h2 style:`{fontSize:48}`]Team[/h2]
 
-TK picture, bio, role?
-
-Matthew Conlen
-
-Fred Hohman
-
-Sara Stalla
-
-Victoria Uren
-
-Andrew Sass
+**Matthew Conlen** Editor-in-chief [br/]
+**Fred Hohman** Editor [br/]
+**Victoria Uren** Editor [br/]
+**Sara Stalla** Editor [br/]
+**Andrew Sass** Art Director[br/]
 
 Friends of Parametric Press:
 
-...
+Thanks to
 
-[h2 style:`{fontSize:48}`]Interactive Media[/h2]
+[h2 style:`{fontSize:48}`]Interactive Publishing[/h2]
 
 ### Technology
 
@@ -77,7 +53,7 @@ archiving articles
 
 [h2 style:`{fontSize:48}`]Contact[/h2]
 
-Want to get in touch? Send us a an email at **cfp@parametric.press**.
+Want to get in touch? Send us a an email at **editors@parametric.press**.
 
 [br/]
 

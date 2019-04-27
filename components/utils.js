@@ -9,7 +9,7 @@ module.exports = {
     if (typeof window === 'undefined') {
       return false;
     }
-    return window.innerWidth <= 800;
+    return window.innerWidth <= 1000;
   },
 
   isServer: () => {

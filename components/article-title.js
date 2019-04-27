@@ -16,16 +16,19 @@ class ArticleTitle extends React.Component {
       showMeta: false,
       showHoverL: false,
       showHoverM: false,
-      showHoverR: false
+      showHoverR: false,
+      clicked: false
     }
   }
 
   componentDidMount() {
     this.bgImage = d3.select('.parametric-bg-image');
     this.titles = d3.selectAll('.article-title .container');
-    this.swup = require('./swup.js');
+    // this.swup = require('./swup.js');
     loadFonts(() => {
-      this.handleRef(this.ref);
+      setTimeout(() => {
+        this.handleRef(this.ref);
+      }, 250);
       if (isMobile()) {
         this.setState({ showText: true });
       }
@@ -33,8 +36,9 @@ class ArticleTitle extends React.Component {
 
   }
 
-  handleSelectionOn(suffix) {
+  handleSelectionOn(suffix, url) {
     return () => {
+      // this.swup.preloadPage(url);
       this.bgImage.attr('src', this.props.image);
       this.titles.style('animation-play-state', 'paused');
       this.setState({
@@ -92,16 +96,24 @@ class ArticleTitle extends React.Component {
 
   handleClick(url) {
     return () => {
-      this.swup.loadPage({
-        url: url,
-        method: 'GET'
+      this.setState({
+        clicked: true
       })
+      const html = document.getElementsByTagName('html')[0];
+      html.classList.add('is-leaving');
+      setTimeout(() => {
+        window.location = url;
+      }, 1500);
+      // this.swup.loadPage({
+      //   url: url,
+      //   method: 'GET'
+      // })
     }
   }
 
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
-    const { x, y, width, height, showMeta, showText, showHoverL, showHoverM, showHoverR } = this.state;
+    const { x, y, width, height, showMeta, showText, showHoverL, showHoverM, showHoverR, clicked } = this.state;
 
     const xFactor = this.getXFactor();
 
@@ -110,17 +122,17 @@ class ArticleTitle extends React.Component {
     }
 
     return (
-      <div key={isServer() ? 'server-title' : 'client-title'} className={`article-title animation-${this._animId} ${(showMeta && !isMobile()) ? 'animating' : ''}`} style={{opacity: showText ? 1 : 0}} ref={this.handleRef.bind(this)}>
+      <div key={isServer() ? 'server-title' : 'client-title'} className={`article-title animation-${this._animId} ${(showMeta && !isMobile()) ? 'animating' : ''} ${clicked ? 'transition-clicked' : ''}`} style={{opacity: showText ? 1 : 0}} ref={this.handleRef.bind(this)}>
         {/* <a href="https://parametric.press"> */}
-          <svg style={{width: '100vw', maxHeight: 120}} viewBox="0 0 1000 120">
+          <svg className="transition-article-title" style={{width: '100vw', maxHeight: 120}} viewBox="0 0 1000 120">
             <g className="container">
               <text key={isServer() ? 'server-text' : 'client-text'} x={isMobile() ? 0 : 500} y="70" alignmentBaseline="baseline" textAnchor={isMobile() ? "start" : "middle"} fontSize="70" fill="none" strokeWidth={isMobile() ? 2 : 1} stroke="#fff" fontFamily="Graphik Web" fontWeight="bold">
                 {
-                  (showMeta) ? <a onClick={this.handleClick(props.url)} ><tspan onMouseEnter={this.handleSelectionOn('L')} onMouseLeave={this.handleSelectionOff('L')}>{props.children}</tspan></a> : null
+                  (showMeta) ? <a onClick={this.handleClick(props.url)} ><tspan onMouseEnter={this.handleSelectionOn('L', props.url)} onMouseLeave={this.handleSelectionOff('L')}>{props.children}</tspan></a> : null
                 }
-                <a onClick={this.handleClick(props.url)} ><tspan id={`parametric-title-mid-${this._id}`} dx={70} onMouseEnter={this.handleSelectionOn('M')} onMouseLeave={this.handleSelectionOff('M')}>{props.children}</tspan></a>
+                <a onClick={this.handleClick(props.url)} ><tspan id={`parametric-title-mid-${this._id}`} dx={70} onMouseEnter={this.handleSelectionOn('M', props.url)} onMouseLeave={this.handleSelectionOff('M')}>{props.children}</tspan></a>
                 {
-                  (showMeta) ? <a onClick={this.handleClick(props.url)} ><tspan dx={70} onMouseEnter={this.handleSelectionOn('R')} onMouseLeave={this.handleSelectionOff('R')}>{props.children}</tspan></a> : null
+                  (showMeta) ? <a onClick={this.handleClick(props.url)} ><tspan dx={70} onMouseEnter={this.handleSelectionOn('R', props.url)} onMouseLeave={this.handleSelectionOff('R')}>{props.children}</tspan></a> : null
                 }
               </text>
               <g style={{display: showHoverL ? 'block' : 'none'}}>

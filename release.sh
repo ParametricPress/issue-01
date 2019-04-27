@@ -7,6 +7,9 @@
 # mkdir public/articles/housing-data-science
 # mkdir public/articles/particle-physics
 
+cp ../parametric-styles/issue-01-theme.css static/
+cp ../parametric-styles/issue-01-layout.css static/
+
 npm link parametric-components parametric-styles
 idyll build
 cp -r build/* public/
