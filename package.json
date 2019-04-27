@@ -5,16 +5,16 @@
   "idyll": {
     "layout": "none",
     "css": "styles.css",
-    "theme": "node_modules/parametric-styles/issue-01-theme.css",
-    "authorView": false
+    "authorView": false,
+    "template": "_index.html"
   },
   "dependencies": {
     "d3": "^4.0.0",
     "idyll": "^4.0.6-alpha.0",
     "idyll-d3-component": "^2.0.0",
     "little-loader": "^0.2.0",
-    "parametric-components": "^1.0.12",
-    "parametric-styles": "^1.0.11",
+    "parametric-components": "^1.0.32",
+    "parametric-styles": "^1.0.20",
     "swup": "^1.9.0"
   },
   "devDependencies": {
