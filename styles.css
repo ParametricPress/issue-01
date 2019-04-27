@@ -16,6 +16,33 @@ img {
   margin-top: none !important;
 }
 
+.mobile-title-container a {
+  display: block;
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Graphik Web';
+  font-weight: bold;
+  margin: 1em 0.5em;
+  line-height: 42px;
+}
+
+.parametric-cover-top-matter {
+  display: flex;
+  width: 90vw;
+  margin: 3em auto;
+  flex-direction: row;
+}
+
+.parametric-issue-date {
+  font-size: 20px;
+  margin-top: 1em;
+}
+
+.parametric-issue-title {
+  text-align: right;
+}
+
 
 .article-title tspan:hover {
   fill: #fff;
@@ -99,11 +126,30 @@ svg text a:hover {
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
+  .parametric-cover-top-matter {
+    flex-direction: column;
+  }
   .parametric-issue-title,
   .parametric-cover-title {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .parametric-cover-top-matter {
+    max-width: none;
+    margin-left: 1em;
+  }
+
+  .parametric-issue-title {
+    margin-top: 0.5em;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .parametric-issue-date {
+    margin-top: 0;
   }
 
   .parametric-edgeware {

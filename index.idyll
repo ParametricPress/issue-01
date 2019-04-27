@@ -8,7 +8,7 @@
 
 [TopMatter fullWidth:true /]
 
-[div fullWidth:true style:`{marginBottom: '6em'}`]
+[div fullWidth:true className:"desktop" style:`{marginBottom: '6em'}`]
   [ArticleTitle url:"/articles/bias-in-machine-learning/" image:"static/images/article-ml.png" author:"Shuyan Wu & Alice Feng"]
     The Myth of the Impartial Machine
   [/ArticleTitle]
@@ -33,6 +33,23 @@
   // [ArticleTitle url:"articles/bias-in-machine-learning/" image:"static/images/article-cds.png" author:"Sam Petulla"]
   //   On Dance
   // [/ArticleTitle]
+[/div]
+
+[div className:"mobile mobile-title-container" style:`{marginBottom: '6em'}`]
+
+  [a href:"/articles/bias-in-machine-learning/"]The Myth of the Impartial Machine[/a]
+
+  [a href:"/articles/particle-physics/"]Particle Physics: A Brief Primer[/a]
+
+  [a href:"/articles/housing-data-science/"]The Data Science of Housing Equity[/a]
+
+  [a href:"/articles/unraveling-the-jpeg/"]Unraveling the JPEG[/a]
+
+  [a href:"/articles/anything-that-flies-anything-that-moves/"]Anything That Flies, On Anything That Moves[/a]
+
+  [a href:"/articles/bacone-school/"]Flatland Follies: Adjunct Simulator[/a]
+
+  [a href:"/about/" style:`{fontStyle: 'italic', color: '#222222'}`]About Us[/a]
 [/div]
 
 

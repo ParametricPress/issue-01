@@ -1,0 +1,208 @@
+[meta
+    title:"The Parametric Press | Issue 01 Call For Proposals"
+    twitterTitle:"Introducing the Parametric Press, an experimental digital magazine dedicated to exploring the interactive storytelling capabilities of the web. Issue 01, Call For Proposals @ParametricPress"
+    twitterHandle:"ParametricPress"
+    shareImageUrl:"https://parametric.press/static/images/share-2.png"
+    shareImageWidth:1200
+    shareImageHeight:675
+    description:"The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined. In the coming year, we will publish our first issue, Science + Society." /]
+
+
+[Header /]
+
+[preload images:`["static/images/size-label.png", "static/images/color-label.png", "static/images/detail-label.png"]` /]
+
+[var name:"brightness" value:1 /]
+[var name:"fontSize" value:0.25 /]
+[var name:"levelOfDetail" value:3 /]
+[derived name:"levelsOfDetail" value:`['TL;DR', 'Essentials', 'Highlights', 'Everything']` /]
+[derived name:"levelOfDetailLabel" value:`levelsOfDetail[levelOfDetail]` /]
+
+[derived name:"showReset" value:`brightness !== 1 || fontSize !== 0.25 || levelOfDetail !== 3 ` /]
+
+[SliderContainer]
+    [StyleUpdater brightness:brightness fontSize:fontSize /]
+
+    [Conditional if:showReset]
+        [button className:"reset" onClick:`brightness = 1; fontSize = 0.25; levelOfDetail = 3`]
+            Reset
+        [/button]
+    [/Conditional]
+    [img src:"static/images/size-label.png" /][br/]
+    [Range value:fontSize min:0 max:1 step:0.01 /]
+
+    [img src:"static/images/color-label.png" /][br/]
+    [Range value:brightness min:0 max:1 step:0.01 /]
+
+    [img src:"static/images/detail-label.png" /][br/]
+    [Range value:levelOfDetail min:0 max:`levelsOfDetail.length - 1` step:1  /]
+    [br/]
+    [Display value:levelOfDetailLabel /]
+
+[/SliderContainer]
+
+[Conditional if:`levelOfDetailLabel === 'Everything'`]
+
+
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around [empowering individuals](http://www.newmediareader.com/book_samples/nmr-21-nelson.pdf) and [enhancing cognition](http://dougengelbart.org/content/view/138/000/), but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook.
+
+[div className:"videoContainer"]
+    [Youtube
+    id:"5xEzjJQOihw"
+    audio:true
+    width:600
+    height:335
+    style:`{width: '100%', margin: '0 auto'}`
+    options:`{ controls: 1, modestbranding: 1, showinfo: 0 }`
+    /]
+[/div]
+
+Alan Kay [imagined the Dynabook](https://history-computer.com/ModernComputer/Personal/Dynabook.html) in the hands of children across the world, while Neal Stephenson wrote of [interactive paper that could display videos and interfaces, and books that could teach their readers](https://en.wikipedia.org/wiki/The_Diamond_Age). The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
+
+## About The Parametric Press
+
+The **Parametric Press** is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined. In the coming year, we will publish our first issue.
+
+
+## Call for Proposals
+
+We are now accepting submissions for issue one, *Science + Society*. This issue will focus on examining scientific and technological phenomena that stand to shape society at large, now or in the near future. We are looking to cover topics that would benefit from using the interactive or otherwise dynamic capabilities of the web. Here are some examples:
+
+[div className:"stackedList"]
+
+- CRISPR
+- The science of causality
+- Universal approximation theorem
+- Sleep interfaces
+- Computational neuroscience
+- Election hacking
+- Quantum computers
+- Memory manipulation
+
+- Carbon capture technologies
+- Lab-grown meat
+- Terraforming planets
+- Nuclear technology
+- The decentralized web
+- Advances in architecture
+- Biohacking
+- The opioid epidemic
+
+[/div]
+
+Publishing interactive content is tricky because it requires combining prose, code, and other media. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work together with those accepted to develop a polished article. We will provide a dynamic article template using [Idyll](https://idyll-lang.org/) to help with this, and offer technical assistance to those who need it.
+
+We are soliciting submissions until January 15[sup]th[/sup] and will notify candidates of their acceptance by February 1[sup]st[/sup]. Accepted authors will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of in-house technical work required. Please send the following information to **cfp@parametric.press**, with the word "pitch" in the subject line.
+
+* Suggested headline
+* A three-paragraph-max outline describing your article
+* Why are you qualified to write this? What will you need help with?
+* Any sketches, mockups, or code prototypes that you've made (optional)
+
+Each published article will receive a unique Digital Object Identifier (DOI), and the code will be released under an open source license.
+
+
+## Existing Examples / Inspiration
+
+[div className:"stackedList"]
+
+- [Magic Ink](http://worrydream.com/MagicInk/)
+- [Explorable Explanations](https://explorabl.es/)
+- [Nicky Case](https://ncase.me)
+- [New York Times The Upshot](https://www.nytimes.com/section/upshot)
+
+- [FiveThirtyEight](https://projects.fivethirtyeight.com/)
+- [The Pudding](https://pudding.cool/)
+- [Distill](https://distill.pub/)
+- [Idyll](https://idyll-lang.org/gallery)
+
+[/div]
+
+[/Conditional]
+
+[Conditional if:`levelOfDetailLabel === 'Highlights'`]
+
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
+
+## Call for Proposals
+The **Parametric Press** is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined. We are now accepting submissions for issue one, *Science + Society*. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society.
+
+Publishing interactive content is tricky because it requires combining prose, code, and other media. We will provide a dynamic article template using [Idyll](https://idyll-lang.org/) to help with this, and offer technical assistance to those who need it. Accepted authors will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of in-house technical work required. We are soliciting submissions until January 15[sup]th[/sup] and will notify candidates of their acceptance by February 1[sup]st[/sup]. Please send the following information to **cfp@parametric.press**, with the word "pitch" in the subject line.
+
+* Suggested headline
+* A three-paragraph-max outline describing your article
+* Why are you qualified to write this? What will you need help with?
+* Any sketches, mockups, or code prototypes that you've made (optional)
+
+## Example Topics
+
+[div className:"stackedList"]
+
+- CRISPR
+- The science of causality
+- Universal approximation theorem
+- Sleep interfaces
+
+- Carbon capture technologies
+- Lab-grown meat
+- Terraforming planets
+- Nuclear technology
+
+[/div]
+
+## Existing Examples / Inspiration
+
+[div className:"stackedList"]
+
+- [Magic Ink](http://worrydream.com/MagicInk/)
+- [Explorable Explanations](https://explorabl.es/)
+
+- [FiveThirtyEight](https://projects.fivethirtyeight.com/)
+- [The Pudding](https://pudding.cool/)
+
+[/div]
+
+[/Conditional]
+
+[Conditional if:`levelOfDetailLabel === 'Essentials'`]
+The **Parametric Press** is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined. We are now accepting submissions for issue one, *Science + Society*.  This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society.
+
+Please send the following information to **cfp@parametric.press** with the word "pitch" in the subject line.
+
+* Suggested headline
+* A three-paragraph-max outline describing your article
+* Why are you qualified to write this? What will you need help with?
+* Any sketches, mockups, or code prototypes that you've made (optional)
+
+
+## Example Topics
+
+[div className:"stackedList"]
+
+- CRISPR
+- The science of causality
+- Universal approximation theorem
+
+- Carbon capture technologies
+- Sleep interfaces
+- Terraforming planets
+
+[/div]
+[/Conditional]
+
+[Conditional if:`levelOfDetailLabel === 'TL;DR'`]
+
+The **Parametric Press** is accepting submissions for its first issue. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society. Accepted authors will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until January 15 and notify candidates of their acceptance by February 1.
+Please send the following information to **cfp@parametric.press** with the word "pitch" in the subject line.
+
+* Suggested headline
+* A three-paragraph-max outline describing your article
+* Why are you qualified to write this? What will you need help with?
+* Any sketches, mockups, or code prototypes that you've made (optional)
+
+[/Conditional]
+
+
+
+
+[analytics google:"UA-130178526-1" /]
