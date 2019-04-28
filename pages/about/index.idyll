@@ -4,7 +4,7 @@
 
 [Nav fullWidth:true /]
 
-[h1 style:`{fontSize:64}`]About the[br/]Parametric Press[/h1]
+[h1]About the[br/]Parametric Press[/h1]
 
 [div className:"parametric-article-dek"]
 
@@ -18,42 +18,53 @@ While it has never been easier for independent writers to share their ideas onli
 
 Alan Kay [imagined the Dynabook](https://history-computer.com/ModernComputer/Personal/Dynabook.html) in the hands of children across the world, while Neal Stephenson wrote of [interactive paper that could display videos and interfaces, and books that could teach their readers](https://en.wikipedia.org/wiki/The_Diamond_Age). The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
 
-[h2 style:`{fontSize:48}`]Our Model[/h2]
+## Our Model
 
-Earlier this year, we put out a [call for proposals](/issue-01/call-for-proposals) for our first issue. [a href:"/"]Issue 01: *Science + Society*[/a] focuses on examining scientific and technological phenomena that stand to shape society at large, now or in the near future. We sought to cover topics that would benefit from using the interactive or otherwise dynamic capabilities of the web.
+Earlier this year, we invited writers to respond to a [call for proposals](/issue-01/call-for-proposals) for our first issue. [a href:"/"]Issue 01: *Science + Society*[/a] focuses on examining scientific and technological phenomena that stand to shape society at large, now or in the near future. We sought to cover topics that would benefit from using the interactive or otherwise dynamic capabilities of the web.
 
-Publishing interactive content is tricky because it requires combining prose, code, and other media. Given this, we did not expect authors to submit a fully developed article. Instead, we accepted idea submissions, and worked together with those accepted to develop the issue, by offering collective technical, design, and editorial assistance to those who needed it.
+Publishing interactive content is challenging because it requires combining prose, code, and other media. Given this, we did not expect authors to submit a fully developed article. Instead, we accepted idea submissions, and worked together with those accepted to develop the issue, by offering collective technical, design, and editorial assistance to those who needed it.
+
+It is this collaborative process—the combination of expertise from individuals across fields and disciplinces—that has allowed us to publish the new and unique forms of writing that make the Parametric Press what it is. Issue 01 is our proof-by-existence, as much an artifact to be consumed as a demonstration of what is possible.
 
 
-[h2 style:`{fontSize:48}`]Team[/h2]
+## Team
 
 **[a href:"https://mathisonian.com/"]Matthew Conlen[/a]** Editor-in-chief [br/]
-**[a href:"https://fredhohman.com/"]Fred Hohman[/a]** Editor [br/]
-**[a href:""]Victoria Uren[/a]** Editor [br/]
-**[a href:"http://sarastalla.com/"]Sara Stalla[/a]** Editor [br/]
+**[a href:"https://fredhohman.com/"]Fred Hohman[/a]** Data, Graphics, Editorial [br/]
+**[a href:""]Victoria Uren[/a]** Editorial [br/]
+**[a href:"http://sarastalla.com/"]Sara Stalla[/a]** UX, Editorial [br/]
 **[a href:"https://www.andrewsass.com/"]Andrew Sass[/a]** Art Director [br/]
+
 
 **Friends of Parametric Press:**
 
 [br/]
 
-*names*
+We would like to thank Andrew Odewahn and O'Reilly Media for providing a donation that made Issue 01 possible; all of the authors who stuck with us through creating this experimental first issue; and Matt Daniels, Jeffrey Heer, and Christian Frisson for their advice, guidance, and feedback. Thanks to [NO NECK LOVES YOU](http://nonecklovesyou.com/) for providing the diamond illustration used throughout the site.
 
-[h2 style:`{fontSize:48}`]Interactive Publishing[/h2]
+The Parametric Press is produced by the non-profit [Idyll open-source collective](https://opencollective.com/idyll).
+
+## Interactive Publishing
 
 ### Technology
 
-Parametric Press is built on a dynamic article template using [Idyll](https://idyll-lang.org/).
+The Parametric Press is built atop [Idyll](https://idyll-lang.org/), an open-source toolkit for writing interactive arcticles. Idyll provides much of the infrastructure that make the Parametric Press possible. While building this publication we are stress testing Idyll, identifying shortcomings and pain points that occur, so that others may benefit from a more polished experience in the future.
 
 ### Open Source
 
-open source
+One of the goals of the Parametric Press is to showcase the new forms of media and publishing that are possible with tools available today, and inspire others to create their own dynamic writings. To that end we make available all of the software that is used on the site, including reusable components, custom data visualizations, and the publishing engine itself.
 
-### Web Archival
+To learn more visit [github.com/parametricpress/issue-01](https://github.com/parametricpress/issue-01).
 
-archiving articles
+### Web Archiving
 
-[h2 style:`{fontSize:48}`]Contact[/h2]
+One major issue facing publishers of interactive media is the problem of archiving: will the code still run a year from now? Five years from now? Ten years? With help from the [Webrecorder](https://webrecorder.io/) team, we have set up a system to publish a digital archive of all of our articles at the time that they are first posted to the site. By tackling the problem of archiving head-on, we hope to show how digital works such as ours can published confidently with the knowledge that they will be preserved indefinitely.
+
+At the top of each of the articles posted on the Parametric Press, you will notice an *archive* link. Clicking this will cause your computer to download a [WARC](https://en.wikipedia.org/wiki/Web_ARChive) file—a type of file that stores all of the information associated with an article, allowing it to be played back at any point in the future, even if a web server goes down or a browser API changes. For an easy way to play back these files, download the [Webrecorder Player](https://github.com/webrecorder/webrecorder-player).
+
+To download an archive of the entire first issue, [click here](/static/archives/issue-01.warc).
+
+## Contact
 
 Want to get in touch? Send us a an email at **[a href:"mailto:editors@parametric.press"]editors@parametric.press[/a]**.
 
