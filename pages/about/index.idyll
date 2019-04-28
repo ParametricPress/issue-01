@@ -52,7 +52,7 @@ The Parametric Press is built atop [Idyll](https://idyll-lang.org/), an open-sou
 
 ### Open Source
 
-From the inception, one of the objectives of the Parametric Press is to showcase the new forms of media and publishing that are possible with tools available today, and inspire others to create their own dynamic writings. To that end, we make available all of the software that runs the site, including reusable components, custom data visualizations, and the publishing engine itself.
+From its inception, one of the objectives of the Parametric Press is to showcase the new forms of media and publishing that are possible with tools available today, and inspire others to create their own dynamic writings. To that end, we make available all of the software that runs the site, including reusable components, custom data visualizations, and the publishing engine itself.
 
 To learn more visit [github.com/parametricpress/issue-01](https://github.com/parametricpress/issue-01).
 
