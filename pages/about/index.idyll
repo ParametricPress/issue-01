@@ -1,14 +1,14 @@
-[meta title:"About the Parametric Press" description:"TK About description" /]
+[meta title:"About the Parametric Press" description:"The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined." /]
 
 [var name:"parametricSlug" value:"about" /]
 
-[Nav fullWidth:true /]
+[BareNav fullWidth:true /]
 
 [h1]About the[br/]Parametric Press[/h1]
 
 [div className:"parametric-article-dek"]
 
-The **Parametric Press** is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined.
+    The [a href:"/" style:`{color:#4801FF}`]**Parametric Press**[/a] is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are effectively combined.
 
 [/div]
 
