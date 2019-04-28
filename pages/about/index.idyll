@@ -40,7 +40,7 @@ It is this collaborative process—the combination of expertise from individuals
 
 [br/]
 
-We would like to thank Andrew Odewahn and O'Reilly Media for providing a donation that made Issue 01 possible; all of the authors who stuck with us through creating this experimental first issue; and Matt Daniels, Jeffrey Heer, and Christian Frisson for their advice, guidance, and feedback. Thanks to [NO NECK LOVES YOU](http://nonecklovesyou.com/) for providing the diamond illustration used throughout the site.
+We thank Andrew Odewahn and O'Reilly Media for making a donation that made Issue 01 possible; all the authors who stuck with us through creating this experimental first issue; [NO NECK LOVES YOU](http://nonecklovesyou.com/) for providing the diamond illustration used throughout the issue; and Matt Daniels, Jeffrey Heer, and Christian Frisson for their advice, guidance, and feedback.
 
 The Parametric Press is produced by the non-profit [Idyll open-source collective](https://opencollective.com/idyll).
 
@@ -48,19 +48,19 @@ The Parametric Press is produced by the non-profit [Idyll open-source collective
 
 ### Technology
 
-The Parametric Press is built atop [Idyll](https://idyll-lang.org/), an open-source toolkit for writing interactive arcticles. Idyll provides much of the infrastructure that make the Parametric Press possible. While building this publication we are stress testing Idyll, identifying shortcomings and pain points that occur, so that others may benefit from a more polished experience in the future.
+The Parametric Press is built atop [Idyll](https://idyll-lang.org/), an open-source toolkit for writing interactive arcticles. Idyll provides much of the infrastructure that make the Parametric Press possible. While building this publication, we are stress testing Idyll and identifying shortcomings and pain points that occur, so that others may benefit from a more polished experience in the future.
 
 ### Open Source
 
-One of the goals of the Parametric Press is to showcase the new forms of media and publishing that are possible with tools available today, and inspire others to create their own dynamic writings. To that end we make available all of the software that is used on the site, including reusable components, custom data visualizations, and the publishing engine itself.
+From the inception, one of the objectives of the Parametric Press is to showcase the new forms of media and publishing that are possible with tools available today, and inspire others to create their own dynamic writings. To that end, we make available all of the software that runs the site, including reusable components, custom data visualizations, and the publishing engine itself.
 
 To learn more visit [github.com/parametricpress/issue-01](https://github.com/parametricpress/issue-01).
 
 ### Web Archiving
 
-One major issue facing publishers of interactive media is the problem of archiving: will the code still run a year from now? Five years from now? Ten years? With help from the [Webrecorder](https://webrecorder.io/) team, we have set up a system to publish a digital archive of all of our articles at the time that they are first posted to the site. By tackling the problem of archiving head-on, we hope to show how digital works such as ours can published confidently with the knowledge that they will be preserved indefinitely.
+One major issue facing publishers of interactive media is the problem of archiving: will the article's code still run a year from now? Five years from now? Ten years? With help from the [Webrecorder](https://webrecorder.io/) team, we have set up a system to publish a digital archive of all of our articles at the time that they are first published to the site. By tackling the problem of archiving head-on, we hope to show how digital works such as ours can published confidently knowing that they will be preserved indefinitely.
 
-At the top of each of the articles posted on the Parametric Press, you will notice an *archive* link. Clicking this will cause your computer to download a [WARC](https://en.wikipedia.org/wiki/Web_ARChive) file—a type of file that stores all of the information associated with an article, allowing it to be played back at any point in the future, even if a web server goes down or a browser API changes. For an easy way to play back these files, download the [Webrecorder Player](https://github.com/webrecorder/webrecorder-player).
+At the top of each Parametric Press article you will notice an *archive* link. Clicking this will download a [WARC](https://en.wikipedia.org/wiki/Web_ARChive) file: a type of file that stores all of the information associated with an article, allowing it to be run and read at any point in the future, even if a web server goes down or a browser API changes. To easily play back these files, download the [Webrecorder Player](https://github.com/webrecorder/webrecorder-player).
 
 To download an archive of the entire first issue, [click here](/static/archives/issue-01.warc).
 
