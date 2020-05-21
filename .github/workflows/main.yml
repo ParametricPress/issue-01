@@ -1,0 +1,30 @@
+name: Build and Deploy
+on:
+  push:
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run build
+      - name: Add and commit
+        uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
+        with:
+
+          # The message for the commit
+          # Default: 'Commit from GitHub Actions'
+          message: '[automated commit] rebuilt idyll post'
+
+          # Name of the branch to use, if different from the one that triggered the workflow
+          # Default: the branch that triggered the workflow (from GITHUB_REF)
+          ref: 'master'
+
+        env:
+          # This is necessary in order to push a commit to the repo
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
