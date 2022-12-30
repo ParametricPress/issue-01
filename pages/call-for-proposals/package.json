@@ -13,7 +13,7 @@
     "d3": "^4.0.0",
     "d3-scale": "^2.1.2",
     "d3-selection": "^1.3.2",
-    "idyll": "^3.12.0",
+    "idyll": "^6.0.0-alpha.6",
     "idyll-d3-component": "^2.0.0",
     "idyll-plugin-url-state": "^2.0.6"
   },
